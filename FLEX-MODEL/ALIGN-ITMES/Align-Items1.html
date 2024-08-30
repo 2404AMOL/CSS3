@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Items</title>
+    <style>
+        .FlexBox{
+            height: 500px;
+            width: 650px;
+            border: 1px solid;
+            margin: 80px auto;
+        }
+        .Box{
+            height: 500px;
+            border: 1px solid;
+        }
+        .Child{
+            height: 150px;
+            width: 100px;
+            border: 1px solid;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 100px;
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+
+        #Box1{
+            display: flex;
+            justify-content: start;
+            align-items: start;
+        }
+
+        #Box2{
+            display: flex;
+            justify-content: center;
+            align-items: start;
+        }
+
+        #Box3{
+            display: flex;
+            justify-content: end;
+            align-items: start;
+        }
+
+        #Box4{
+            display: flex;
+            justify-content: start;
+            align-items:center;
+        }
+
+        #Box5{
+            display: flex;
+            justify-content: start;
+            align-items: end;
+        }
+
+        #Box6{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #Box7{
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+
+        #Box8{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        #Box9{
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+        #Box10{
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+        }
+        #Box11{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #Box12{
+            display: flex;
+            justify-content: space-around;
+            align-items: end;
+        }
+        #Box13{
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+        }
+        #Box14{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #Box15{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        }
+        #Box16{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: start;
+        }
+        #Box17{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #Box18{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: end;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>1.JUSTIFY CONTENT : START</h3>
+    <h3>1.ALIGN ITEMS : START</h3>
+    <div class="FlexBox" id="FlexBox1">
+        <div class="Box" id="Box1">
+            <div class="Child" id="Child1">Child1</div>
+            <div class="Child" id="Child2">Child2</div>
+            <div class="Child" id="Child3">Child3</div>
+        </div>
+    </div>
+    <hr>
+    <h3>2.JUSTIFY CONTENT : CENTER</h3>
+    <h3>2.ALIGN ITEMS : START</h3>
+    <div class="FlexBox" id="FlexBox2">
+        <div class="Box" id="Box2">
+            <div class="Child" id="Child1">Child1</div>
+            <div class="Child" id="Child2">Child2</div>
+            <div class="Child" id="Child3">Child3</div>
+        </div>
+    </div>
+    
+    <hr>
+    <h3>3.JUSTIFY CONTENT : END</h3>
+    <h3>3.ALIGN ITEMS : START</h3>
+    <div class="FlexBox" id="FlexBox3">
+        <div class="Box" id="Box3">
+            <div class="Child" id="Child1">Child1</div>
+            <div class="Child" id="Child2">Child2</div>
+            <div class="Child" id="Child3">Child3</div>
+        </div>
+    </div>
+    
+    <hr>
+    <h3>4.JUSTIFY CONTENT : START</h3>
+    <h3>4.ALIGN ITEMS : CENTER</h3>
+    <div class="FlexBox" id="FlexBox4">
+        <div class="Box" id="Box4">
+            <div class="Child" id="Child1">Child1</div>
+            <div class="Child" id="Child2">Child2</div>
+            <div class="Child" id="Child3">Child3</div>
+        </div>
+    </div>
+    
+    <hr>
+    <h3>5.JUSTIFY CONTENT : START</h3>
+    <h3>5.ALIGN ITEMS : END</h3>
+    <div class="FlexBox" id="FlexBox5">
+        <div class="Box" id="Box5">
+            <div class="Child" id="Child1">Child1</div>
+            <div class="Child" id="Child2">Child2</div>
+            <div class="Child" id="Child3">Child3</div>
+        </div>
+    </div>
+    
+    <hr>
+    <h3>6.JUSTIFY CONTENT : CENTER</h3>
+    <h3>6.ALIGN ITEMS : CENTER</h3>
+    <div class="FlexBox" id="FlexBox6">
+        <div class="Box" id="Box6">
+            <div class="Child" id="Child1">Child1</div>
+            <div class="Child" id="Child2">Child2</div>
+            <div class="Child" id="Child3">Child3</div>
+        </div>
+    </div>
+    
+    <hr>
+    <h3>7.JUSTIFY CONTENT : CENTER</h3>
+    <h3>7.ALIGN ITEMS : END</h3>
+    <div class="FlexBox" id="FlexBox7">
+        <div class="Box" id="Box7">
+            <div class="Child" id="Child1">Child1</div>
+            <div class="Child" id="Child2">Child2</div>
+            <div class="Child" id="Child3">Child3</div>
+        </div>
+    </div>
+    
+    <hr>
+    <h3>8.JUSTIFY CONTENT : END</h3>
+    <h3>8.ALIGN ITEMS : CENTER</h3>
+    <div class="FlexBox" id="FlexBox8">
+        <div class="Box" id="Box8">
+            <div class="Child" id="Child1">Child1</div>
+            <div class="Child" id="Child2">Child2</div>
+            <div class="Child" id="Child3">Child3</div>
+        </div>
+    </div>
+    
+    <hr>
+    <h3>9.JUSTIFY CONTENT : END</h3>
+    <h3>9.ALIGN ITEMS : END</h3>
+    <div class="FlexBox" id="FlexBox9">
+        <div class="Box" id="Box9">
+            <div class="Child" id="Child1">Child1</div>
+            <div class="Child" id="Child2">Child2</div>
+            <div class="Child" id="Child3">Child3</div>
+        </div>
+    </div>
+    
+    <hr>
+    <h3>10.JUSTIFY CONTENT : SPACE - AROUND</h3>
+    <h3>10.ALIGN ITEMS : START</h3>
+    <div class="FlexBox" id="FlexBox10">
+        <div class="Box" id="Box10">
+            <div class="Child" id="Child1">Child1</div>
+            <div class="Child" id="Child2">Child2</div>
+            <div class="Child" id="Child3">Child3</div>
+        </div>
+    </div>
+    
+    <hr>
+    <h3>11.JUSTIFY CONTENT : SPACE - AROUND</h3>
+    <h3>11.ALIGN ITEMS : CENTER</h3>
+    <div class="FlexBox" id="FlexBox11">
+        <div class="Box" id="Box11">
+            <div class="Child" id="Child1">Child1</div>
+            <div class="Child" id="Child2">Child2</div>
+            <div class="Child" id="Child3">Child3</div>
+        </div>
+    </div>
+    
+    <hr>
+    <h3>12.JUSTIFY CONTENT : SPACE - AROUND</h3>
+    <h3>12.ALIGN ITEMS : END</h3>
+    <div class="FlexBox" id="FlexBox12">
+        <div class="Box" id="Box12">
+            <div class="Child" id="Child1">Child1</div>
+            <div class="Child" id="Child2">Child2</div>
+            <div class="Child" id="Child3">Child3</div>
+        </div>
+    </div>
+
+    
+    <hr>
+    <h3>13.JUSTIFY CONTENT : SPACE - BETWEEN</h3>
+    <h3>13.ALIGN ITEMS : START</h3>
+    <div class="FlexBox" id="Flex13">
+        <div class="Box" id="Box13">
+            <div class="Child" id="Child">Child1</div>
+            <div class="Child" id="Child">Child2</div>
+            <div class="Child" id="Child">Child3</div>
+        </div>
+    </div>
+    
+    <hr>
+    <h3>14.JUSTIFY CONTENT : SPACE - BETWEEN</h3>
+    <h3>14.ALIGN ITEMS : CENTER</h3>
+    <div class="FlexBox" id="Flex14">
+        <div class="Box" id="Box14">
+            <div class="Child" id="Child">Child1</div>
+            <div class="Child" id="Child">Child2</div>
+            <div class="Child" id="Child">Child3</div>
+        </div>
+    </div>
+    
+    <hr>
+    <h3>15.JUSTIFY CONTENT : SPACE - BETWEEN</h3>
+    <h3>15.ALIGN ITEMS : END</h3>
+    <div class="FlexBox" id="Flex15">
+        <div class="Box" id="Box15">
+            <div class="Child" id="Child">Child1</div>
+            <div class="Child" id="Child">Child2</div>
+            <div class="Child" id="Child">Child3</div>
+        </div>
+    </div>
+    
+    <hr>
+    <h3>16.JUSTIFY CONTENT : SPACE - EVENLY</h3>
+    <h3>16.ALIGN ITEMS : START</h3>
+    <div class="FlexBox" id="Flex16">
+        <div class="Box" id="Box16">
+            <div class="Child" id="Child">Child1</div>
+            <div class="Child" id="Child">Child2</div>
+            <div class="Child" id="Child">Child3</div>
+        </div>
+    </div>
+    
+    <hr>
+    <h3>17.JUSTIFY CONTENT : SPACE - EVENLY</h3>
+    <h3>17.ALIGN ITEMS : CENTER</h3>
+    <div class="FlexBox" id="Flex17">
+        <div class="Box" id="Box17">
+            <div class="Child" id="Child">Child1</div>
+            <div class="Child" id="Child">Child2</div>
+            <div class="Child" id="Child">Child3</div>
+        </div>
+    </div>
+    
+    <hr>
+    <h3>18.JUSTIFY CONTENT : SPACE - EVENLY</h3>
+    <h3>18.ALIGN ITEMS : END</h3>
+    <div class="FlexBox" id="Flex18">
+        <div class="Box" id="Box18">
+            <div class="Child" id="Child">Child1</div>
+            <div class="Child" id="Child">Child2</div>
+            <div class="Child" id="Child">Child3</div>
+        </div>
+    </div>
+</body>
+</html>

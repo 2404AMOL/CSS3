@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.856);
+        }
+        main{
+            width: 90%;
+            margin: 200px auto;
+        }
+        .Text{
+            height: 150px;
+            width: 130px;
+            display: inline-block;
+            /* border: 1px solid white; */
+            margin-left: 2rem;
+            perspective: 100px;
+            transition: 1s all linear;
+        }
+        span{
+            font-size: 9rem;
+            font-weight: 700;
+            color: #000000;
+            text-align: center;
+        }
+
+        .Text:hover{
+            transform: translateY(-55px);
+
+        }
+
+        #One:hover{
+            text-shadow: -1px 2px 3px #fff,1px 15px 24px blue;
+            -webkit-text-fill-color: #fb3605;
+        }
+        #Two:hover{
+            text-shadow: -1px 2px 3px #fff,1px 15px 24px red;
+            -webkit-text-fill-color: yellow;
+        }
+        #Three:hover{
+            text-shadow: -1px 2px 3px #fff,1px 15px 24px red;
+            -webkit-text-fill-color: cyan;
+        }
+        #Four:hover{
+            text-shadow: -1px 2px 3px #fff,1px 15px 24px white;
+            -webkit-text-fill-color: violet;
+        }
+        #Five:hover{
+            text-shadow: -1px 2px 3px #fff,1px 15px 24px red;
+            -webkit-text-fill-color: dodgerblue;
+        }
+        #Six:hover{
+            text-shadow: -1px 2px 3px #fff,1px 15px 24px rgba(255,0,0,0.77);
+            -webkit-text-fill-color: pink;
+        }
+        #Seven:hover{
+            text-shadow: -1px 2px 3px #fff,1px 15px 24px orangered;
+            -webkit-text-fill-color: greenyellow;
+        }
+        #Eight:hover{
+            text-shadow: -1px 2px 3px #fff,1px 15px 24px red;
+            -webkit-text-fill-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="Text"><span id="One">F</span></div>
+        <div class="Text"><span id="Two">R</span></div>
+        <div class="Text"><span id="Three">O</span></div>
+        <div class="Text"><span id="Four">N</span></div>
+        <div class="Text"><span id="Five">T</span></div>
+        <div class="Text"><span id="Six">E</span></div>
+        <div class="Text"><span id="Seven">N</span></div>
+        <div class="Text"><span id="Eight">D</span></div>
+    </main>
+</body>
+</html>

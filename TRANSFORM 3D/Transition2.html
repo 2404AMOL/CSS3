@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            height: 700px;
+            width: 700px;
+            border: 1px solid;
+            border-radius: 50%;
+            margin: 0 auto;
+            background-color: yellow;
+        }
+        .Box{
+            height: 350px;
+            width: 300px;
+            border: 1px solid;
+            margin: 0 auto;
+            display: inline-block;
+            border-radius: 50%;
+            border-top-width: 30px;
+            margin-left: 4%;
+            perspective: 200px;
+            transition: 2s all linear;
+        }
+        .eye{
+            height: 150px;
+            width: 100px;
+            border: 1px solid;
+            border-radius: 50%;
+            background-color: black;
+            position: relative;
+            top: 24%;
+            left: 35%;
+            perspective: 200px;
+            transition: 1s all linear;
+        }
+        .Box:hover{
+            transform: translateY(15px);
+            transform-style: preserve-3d;
+        }
+        .eye:hover{
+            transform: scale(0.1);
+            transform-origin: center;
+            transform-style: preserve-3d;
+
+        }
+        .Mouth{
+            height: 150px;
+            width:74%;
+            border: 1px solid;
+            border-radius: 50%;
+            position: relative;
+            left: 13%;
+            top: 5%;
+            background-color: black;
+            transition: 2s all linear;
+        }
+        .Mouth:hover{
+            transform: scale(0.2);
+            transform-origin: center;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="Box" id="Box1">
+            <div class="eye"></div>
+        </div>
+        <div class="Box" id="Box2">
+            <div class="eye"></div>
+        </div>
+        <div class="Mouth" id="Box3">
+            <div id="Mouth"></div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Parent{
+            display: grid;
+            grid-template-areas:  "Header Header Header Header Header Header"
+                                  "Left1 Main Main Main Main Right1"
+                                  "Footer Footer Footer Footer Footer Footer" ;
+                                  padding: 20px;
+                                  background-color: hotpink;
+                                  gap: 20px;
+        }
+        #Header{
+            grid-area: Header;
+        }
+        #Left{
+            grid-area: Left1;
+        }
+        #Main{
+            grid-area: Main
+        }
+        #Right{
+            grid-area: Right1;
+        }
+        #Footer{
+            grid-area: Footer;
+        }
+        .Blocks{
+            text-align: center;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <!--! GRID MODEL  -->
+    <!--todo : Grid Model it is used to Make the webpages in Responsive  -->
+    <div class="Parent">
+        <div class="Blocks" id="Header">HEADER</div>
+        <div class="Blocks" id="Left">LEFT</div>
+        <div class="Blocks" id="Main">MAIN</div>
+        <div class="Blocks" id="Right">RIGHT</div>
+        <div class="Blocks" id="Footer">FOOTER</div>
+    </div>
+</body>
+</html>

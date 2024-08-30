@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-Content</title>
+    <style>
+        .FlexBox{
+            height: 500px;
+            width: 500px;
+            border: 1px solid;
+            margin: 30px auto;
+        }
+        .Childs{
+            width: 100px;
+            height: 200px;
+            border: 1px solid;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            line-height: 150px;
+        }
+        h4{
+            text-align: center;
+        }
+        #Box1{
+            display: flex;
+            justify-items: start;
+        }
+        #Box2{
+            display: flex;
+            justify-content: center;
+        }
+        #Box3{
+            display: flex;
+            justify-content: end;
+        }
+
+        #Box4{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #Box5{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #Box6{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div class="FlexBox" id="FlexBox1">
+        <div id="Box1">
+            <div class="Childs" id="Child11">
+                <h2>Child1</h2>
+            </div>
+            <div class="Childs" id="Child12">
+                <h2>Child2</h2>
+            </div>
+            <div class="Childs" id="Child13">
+                <h2>Child3</h2>
+            </div>
+        </div>
+        <h1>Case No-1</h1>
+        <h4>JUSTIFY CONTENT START</h4>
+    </div>
+    <div class="FlexBox" id="FlexBox2">
+        <div id="Box2">
+            <div class="Childs" id="Child11">
+                <h2>Child1</h2>
+            </div>
+            <div class="Childs" id="Child12">
+                <h2>Child2</h2>
+            </div>
+            <div class="Childs" id="Child13">
+                <h2>Child3</h2>
+            </div>
+        </div>
+        <h1>Case No-2</h1>
+        <h4>JUSTIFY CONTENT CENTER</h4>
+    </div>
+    <div class="FlexBox" id="FlexBox3">
+        <div id="Box3">
+            <div class="Childs" id="Child11">
+                <h2>Child1</h2>
+            </div>
+            <div class="Childs" id="Child12">
+                <h2>Child2</h2>
+            </div>
+            <div class="Childs" id="Child13">
+                <h2>Child3</h2>
+            </div>
+        </div>
+        <h1>Case No-3</h1>
+        <h4>JUSTIFY CONTENT END</h4>
+    </div>
+    <div class="FlexBox" id="FlexBox4">
+        <div id="Box4">
+            <div class="Childs" id="Child11">
+                <h2>Child1</h2>
+            </div>
+            <div class="Childs" id="Child12">
+                <h2>Child2</h2>
+            </div>
+            <div class="Childs" id="Child13">
+                <h2>Child3</h2>
+            </div>
+        </div>
+        <h1>Case No-4</h1>
+        <h4>JUSTIFY CONTENT SPACE - AROUND</h4>
+    </div>
+    <div class="FlexBox" id="FlexBox5">
+        <div id="Box5">
+            <div class="Childs" id="Child11">
+                <h2>Child1</h2>
+            </div>
+            <div class="Childs" id="Child12">
+                <h2>Child2</h2>
+            </div>
+            <div class="Childs" id="Child13">
+                <h2>Child3</h2>
+            </div>
+        </div>  
+        <h1>Case No-4</h1>
+        <h4>JUSTIFY CONTENT SPACE - BETWEEN</h4>
+    </div>
+    <div class="FlexBox" id="FlexBox6">
+        <div id="Box6">
+            <div class="Childs" id="Child11">
+                <h2>Child1</h2>
+            </div>
+            <div class="Childs" id="Child12">
+                <h2>Child2</h2>
+            </div>
+            <div class="Childs" id="Child13">
+                <h2>Child3</h2>
+            </div>
+        </div>
+        <h1>Case No-1</h1>
+        <h4>JUSTIFY CONTENT SPACE - EVENLY</h4>
+    </div>
+</body>
+</html>

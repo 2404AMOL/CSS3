@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Container{
+            background-color: red;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 20px;
+            padding: 10px;
+        }
+        .Blocks{
+            background-color: cyan;
+            padding: 24px;
+            text-align: center;
+        }
+        @media (min-width:500px) and (max-width:700px) {
+            .Container{
+                background-color: blue;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 20px;
+                padding: 20px;
+            }
+            .Blocks{
+                background-color: red;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+        @media (min-width:50px) and (max-width:500px){
+            .Container{
+                background-color: yellow;
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 20px;
+                padding: 20px;
+            }
+            .Blocks{
+                background-color: dodgerblue;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="Blocks" id="Blocks1">Blocks1</div>
+        <div class="Blocks" id="Blocks2">Blocks2</div>
+        <div class="Blocks" id="Blocks3">Blocks3</div>
+        <div class="Blocks" id="Blocks4">Blocks4</div>
+        <div class="Blocks" id="Blocks5">Blocks5</div>
+        <div class="Blocks" id="Blocks6">Blocks6</div>
+        <div class="Blocks" id="Blocks7">Blocks7</div>
+        <div class="Blocks" id="Blocks8">Blocks8</div>
+        <div class="Blocks" id="Blocks9">Blocks9</div>
+        <div class="Blocks" id="Blocks10">Blocks10</div>
+        <div class="Blocks" id="Blocks11">Blocks11</div>
+        <div class="Blocks" id="Blocks12">Blocks12</div>
+    </div>
+</body>
+</html>

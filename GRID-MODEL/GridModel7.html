@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Container{
+            width: 700px;
+            margin: 50px auto;
+            background-color: lightblue;
+            display: grid;
+            grid-template-rows: 120px 200px 60px 400px 50px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-areas: "Header Header Header Header"
+                                "Menu Menu Menu Menu"
+                                "Box1 Box2 Sidebar Sidebar"
+                                "Content Content Content Content"
+                                "Footer Footer Footer Footer";
+            
+            gap: 20px;
+        }
+        .Blocks{
+            text-align: center;
+        }
+        #Header{
+            grid-area: Header;
+            background-color: red;
+        }
+        #Menu{
+            grid-area: Menu;
+            background-color: yellow;
+        }
+        #Box1{
+            grid-area: Box1;
+            background-color: black;
+        }
+        #Box2{
+            grid-area: Box2;
+            background-color: white;
+        }
+        #Sidebar{
+            grid-area: Sidebar;
+            background-color: orangered;
+        }
+        #Content{
+            grid-area: Content;
+            background-color: hotpink;
+        }
+        #Footer{
+            grid-area: Footer;
+            background-color: blanchedalmond;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="Blocks" id="Header">HEADER</div>
+        <div class="Blocks" id="Menu">MENU</div>
+        <div class="Blocks" id="Box1">BOX1</div>
+        <div class="Blocks" id="Box2">BOX2</div>
+        <div class="Blocks" id="Sidebar">SIDEBAR</div>
+        <div class="Blocks" id="Content">CONTENT</div>
+        <div class="Blocks" id="Footer">FOOTER</div>
+    </div>
+</body>
+</html>

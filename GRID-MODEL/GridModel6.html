@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Parent{
+            width: 700px;
+            height: 800px;
+            background-color: lightblue;
+            display: grid;
+            grid-template-rows:repeat(3,2fr) ;
+            grid-template-columns: repeat(3,100px);
+            row-gap: 50px;
+            column-gap: 30px;
+        }
+        .Item1{
+            background-color: red;
+        }
+        .Item2{
+            background-color: yellow;
+        }
+        .Item3{
+            background-color: black;
+        }
+        .Item4{
+            background-color: white;
+        }
+        .Item5{
+            background-color: steelblue;
+        }
+        .Item6{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="Parent">
+        <div class="Item1">ITEM 1</div>
+        <div class="Item2">ITEM 2</div>
+        <div class="Item3">ITEM 3</div>
+        <div class="Item4">ITEM 4</div>
+        <div class="Item5">ITEM 5</div>
+        <div class="Item6">ITEM 6</div>
+    </div>
+</body>
+</html>
